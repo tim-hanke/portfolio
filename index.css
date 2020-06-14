@@ -12,7 +12,7 @@ body {
 
 /* temporary psuedo-centering */
 header, section {
-    padding-top: 20%;
+    padding-top: 20vh;
 }
 
 header {
