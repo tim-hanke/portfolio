@@ -82,12 +82,55 @@ header {
 .profileImg {
     height: 20vh;
     border-radius: 50%;
-    border: 2px solid var(--light-bg-color);
+    border: 1px solid var(--light-bg-color);
     align-self: flex-start;
+    box-shadow: 0 0 5vmin 0px rgba(0,0,0,0.75);
+}
+
+/* because I've tried to size everything relative to the viewport size
+I think it makes more sense to do media queries on portrait or landscape
+instead of specific resolutions */
+@media (orientation: landscape) {
+    /* 'hi,' */
+    #greeting span:nth-of-type(1) {
+        padding-left: 5vw;
+    }
+
+    /* 'my name is' */
+    #greeting span:nth-of-type(2) {
+        padding: 10vh 0 0 30vw;
+    }
+
+    /* 'Tim Hanke' */
+    #greeting span:nth-of-type(3) {
+        padding-left: 25vw;
+    }
+
+    /* 'and I'm a' */
+    #greeting span:nth-of-type(4) {
+        padding-left: 30vw;
+    }
+
+    /* 'full stack' */
+    #greeting span:nth-of-type(5) {
+        padding-left: 23vw;
+    }
+
+    /* 'developer' */
+    #greeting span:nth-of-type(6) {
+        padding-left: 33vw;
+    }
+
+    .profileImg {
+        height: 35vh;
+        position: absolute;
+        bottom: 10vh;
+    }
 }
 
 .fa-chevron-down {
     font-size: 6vh;
+    color: var(--large-text-color);
     opacity: .7;
 }
 
@@ -95,6 +138,7 @@ nav {
     height: 5vh;
     font-size: 4vh;
     background-color: rgba(0, 0, 0, .5);
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     bottom: 0;
@@ -144,6 +188,10 @@ nav ul li:nth-of-type(3) {
     line-height: 1.2;
 }
 
+#portfolio {
+    font-size: 2.4vmax;
+}
+
 .bio p, .portfolio p {
     max-width: 550px;
 }
@@ -154,6 +202,10 @@ nav ul li:nth-of-type(3) {
 
 .portfolio {
     height: 75vmax;
+}
+
+.portfolio a {
+    color: var(--large-text-color);
 }
 
 .projectImg {
