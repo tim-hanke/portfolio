@@ -61,6 +61,7 @@ header {
 /* 'Tim Hanke' */
 #greeting span:nth-of-type(3) {
     font-size: 15vmin;
+    font-weight: bold;
     color: var(--highlight-text-color);
 }
 
