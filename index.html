@@ -5,28 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Portfolio for Tim Hanke showcasing a Bio and Portfolio of recent projects.">
     <title>Tim Hanke Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/e49e01fcdf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <header>
-            <h1>Hero</h1>
+            <p id="greeting"><span>hi, </span><span>my name is </span><span>Tim Hanke </span><span>and I'm a </span><span>full stack </span><span>developer</span></p>
+            <img class="profileImg" src="images/p3wu3kcr7zgsgos8.jpg" alt="Tim Hanke smiling in a grey suit jacket and blue shirt">
+            <span class="fas fa-chevron-down"></span>
         </header>
         <nav>
-            Nav
+            <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="mailto:tim@timhanke.dev" aria-label="Email me" title="Email me"><span class="fas fa-envelope"></span></a></li>
+                <li><a href="https://github.com/tim-hanke" aria-label="My GitHub" title="My GitHub" target="_blank"><span class="fab fa-github"></span></a></li>
+                <li><a href="https://www.linkedin.com" aria-label="My LinkedIn" title="My LinkedIn" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+            </ul>
         </nav>
-        <section class="bio">
-            Bio
+        <section id="bio" class="bio">
+            <h2>About Me</h2>
+            <p>I'm a graduate of Thinkful's Engineering Flex program and I'm passionate about making an impact.</p>
+            <p>I have experience with HTML, CSS, Javascript, jQuery, React, Node, and Postgres.</p>
+            <!-- <p>I make interfaces that <em>just work</em>, back ends that <em>never quit</em>, apps that become <em>indispensable</em>, and space for <em>moments of delight</em> in everything I do.</p> -->
+            <p>Apart from code, I like to travel off the beaten path, write, create inside jokes with friends, and play games (some with rules only I know).</p>
         </section>
-        <section class="portfolio">
-            Project 1
-        </section>
-        <section class="portfolio">
-            Project 2
-        </section>
-        <section class="portfolio">
-            Project 3
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <section class="portfolio">
+                <h3>Movie Quote Quiz</h3>
+                <img src="images/quizapp-tiny.jpg" alt="screenshot of Movie Quote Quiz app" class="projectImg">
+                <p>This is a quiz architecture used to see if you can remember, or misremember, some of the silver screen’s most famous lines. It’s easily extensible for various amounts of questions or answer options.</p>
+                <p>HTML, CSS, jQuery</p>
+                <p><a href="http://tim-hanke.github.io/quiz-app/">Live app</a> | <a href="http://github.com/tim-hanke/quiz-app">Repo</a></p>
+                
+            </section>
         </section>
     </main>
 </body>
