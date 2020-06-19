@@ -189,8 +189,18 @@ nav ul li:nth-of-type(3) {
     line-height: 1.3;
 }
 
+.portfolio {
+    max-width: 500px;
+}
+
 #portfolio {
     font-size: 2.4vmax;
+}
+
+.portfolioFlexContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .bio p, .portfolio p {
@@ -210,7 +220,8 @@ nav ul li:nth-of-type(3) {
 }
 
 .projectImg {
-    /* width: 90vw; */
-    height: 30vmax;
+    width: 90vmin;
+    /* height: 30vmax; */
+    max-width: 450px;
 }
 
