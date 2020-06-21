@@ -239,6 +239,10 @@ instead of specific resolutions */
         position: absolute;
         bottom: 10vh;
     }
+
+    .fa-chevron-down {
+        font-size: 6vh;
+    }
 }
 
 /* under 600px width, we hide our sticky nav bar,
@@ -268,17 +272,9 @@ and grow the hero/header section */
         justify-content: flex-end;
     }
 
-    .navlinks {
-        /* display: none; */
-    }
-
     .hamburger {
         display: block;
         margin-right: 2vw;
-        /* padding: 1vw 1vw 0 1vw;
-        background-color: var(--light-bg-color);
-        border-radius: 0 0 20% 20%;
-        box-shadow: 0 0 5vmin 0px rgba(0,0,0,0.75); */
     }
 }
 
