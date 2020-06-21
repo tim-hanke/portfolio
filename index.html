@@ -17,13 +17,15 @@
             <img class="profileImg" src="images/p3wu3kcr7zgsgos8.jpg" alt="Tim Hanke smiling in a grey suit jacket and blue shirt">
             <span class="fas fa-chevron-down"></span>
         </header>
-        <nav>
+        <nav id="navbar" class="navbar transparent">
             <ul>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="mailto:tim@timhanke.dev" aria-label="Email me" title="Email me"><span class="fas fa-envelope"></span></a></li>
-                <li><a href="https://github.com/tim-hanke" aria-label="My GitHub" title="My GitHub" target="_blank"><span class="fab fa-github"></span></a></li>
-                <li><a href="https://www.linkedin.com" aria-label="My LinkedIn" title="My LinkedIn" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+                <li class="navlinks hidden"><a href="#bio">Bio</a></li>
+                <li class="navlinks hidden"><a href="#portfolio">Portfolio</a></li>
+                <li class="navlinks hidden"><a href="mailto:tim@timhanke.dev" aria-label="Email me" title="Email me"><span class="fas fa-envelope"></span></a></li>
+                <li class="navlinks hidden"><a href="https://github.com/tim-hanke" aria-label="My GitHub" title="My GitHub" target="_blank"><span class="fab fa-github"></span></a></li>
+                <li class="navlinks hidden"><a href="https://www.linkedin.com" aria-label="My LinkedIn" title="My LinkedIn" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+                <li class="hamburger"><a href="#" aria-label="Menu" title="Menu" onclick="navToggler()"><span class="fas fa-bars"></span></a></li>
+                <!-- a href="javascript:void(0);" class="icon" onclick="myFunction()" -->
             </ul>
         </nav>
         <section id="bio" class="bio">
@@ -60,5 +62,6 @@
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>

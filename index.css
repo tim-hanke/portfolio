@@ -51,6 +51,7 @@ header {
 #greeting span:nth-of-type(1) {
     align-self: flex-start;
     font-size: 12vh;
+    padding-top: 1vh;
 }
 
 /* 'my name is' */
@@ -89,47 +90,6 @@ header {
     box-shadow: 0 0 5vmin 0px rgba(0,0,0,0.75);
 }
 
-/* because I've tried to size the hero/header relative to the viewport size
-I think it makes more sense to do media queries on portrait or landscape
-instead of specific resolutions */
-@media (orientation: landscape) {
-    /* 'hi,' */
-    #greeting span:nth-of-type(1) {
-        padding-left: 5vw;
-    }
-
-    /* 'my name is' */
-    #greeting span:nth-of-type(2) {
-        padding: 10vh 0 0 30vw;
-    }
-
-    /* 'Tim Hanke' */
-    #greeting span:nth-of-type(3) {
-        padding-left: 25vw;
-    }
-
-    /* 'and I'm a' */
-    #greeting span:nth-of-type(4) {
-        padding-left: 30vw;
-    }
-
-    /* 'full stack' */
-    #greeting span:nth-of-type(5) {
-        padding-left: 23vw;
-    }
-
-    /* 'developer' */
-    #greeting span:nth-of-type(6) {
-        padding-left: 33vw;
-    }
-
-    .profileImg {
-        height: 35vh;
-        position: absolute;
-        bottom: 10vh;
-    }
-}
-
 .fa-chevron-down {
     font-size: 6vh;
     color: var(--large-text-color);
@@ -139,7 +99,7 @@ instead of specific resolutions */
 nav {
     height: 5vh;
     font-size: 4vh;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: black;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -158,10 +118,6 @@ nav ul li {
     margin-left: 2vw;
 }
 
-nav ul li:last-of-type {
-    margin-right: 2vw;
-}
-
 nav ul li a {
     text-decoration: none;
     color: var(--large-text-color);
@@ -175,9 +131,19 @@ nav ul li a:hover,
 nav ul li a:focus {
     color: var(--highlight-text-color);
 }
-
-nav ul li:nth-of-type(3) {
+    
+.navlinks:nth-of-type(3) {
     margin-left: auto;
+}
+
+.navlinks:nth-of-type(5) {
+    margin-right: 2vw;
+}
+
+.hamburger {
+    display: none;
+    /* background-color: black; */
+    /* border: 1px solid black; */
 }
 
 .bio, .portfolio {
@@ -225,6 +191,90 @@ nav ul li:nth-of-type(3) {
     max-width: 450px;
 }
 
+/* because I've tried to size the hero/header relative to the viewport size
+I think it makes more sense to do media queries on portrait or landscape
+instead of specific resolutions */
+@media (orientation: landscape) {
+    /* 'hi,' */
+    #greeting span:nth-of-type(1) {
+        padding-left: 5vw;
+    }
+
+    /* 'my name is' */
+    #greeting span:nth-of-type(2) {
+        padding: 10vh 0 0 30vw;
+    }
+
+    /* 'Tim Hanke' */
+    #greeting span:nth-of-type(3) {
+        padding-left: 25vw;
+    }
+
+    /* 'and I'm a' */
+    #greeting span:nth-of-type(4) {
+        padding-left: 30vw;
+    }
+
+    /* 'full stack' */
+    #greeting span:nth-of-type(5) {
+        padding-left: 23vw;
+    }
+
+    /* 'developer' */
+    #greeting span:nth-of-type(6) {
+        padding-left: 33vw;
+    }
+
+    .profileImg {
+        height: 35vh;
+        position: absolute;
+        bottom: 10vh;
+    }
+}
+
+/* under 600px width, we hide our sticky nav bar,
+show our hamburger menu icon,
+and grow the hero/header section */
+@media (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /* background-color: transparent; */
+    }
+
+    .transparent {
+        background-color: transparent;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .navlinks {
+        /* display: none; */
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 2vw;
+        /* padding: 1vw 1vw 0 1vw;
+        background-color: var(--light-bg-color);
+        border-radius: 0 0 20% 20%;
+        box-shadow: 0 0 5vmin 0px rgba(0,0,0,0.75); */
+    }
+}
+
+/* above 900px width, we adjust the font sizes and stagger
+the paragraphs in the bio section,  */
 @media (min-width: 900px) {
     h2 {
         font-size: 32px;
