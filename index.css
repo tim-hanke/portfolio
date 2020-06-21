@@ -118,7 +118,7 @@ nav ul li {
     margin-left: 2vw;
 }
 
-nav ul li a {
+nav ul li > * {
     text-decoration: none;
     color: var(--large-text-color);
     -webkit-transition: color .3s;
@@ -127,8 +127,8 @@ nav ul li a {
     transition: color .3s;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+nav ul li > *:hover,
+nav ul li > *:focus {
     color: var(--highlight-text-color);
 }
     
@@ -142,8 +142,12 @@ nav ul li a:focus {
 
 .hamburger {
     display: none;
-    /* background-color: black; */
-    /* border: 1px solid black; */
+}
+
+.hamburger button {
+    all: inherit;
+    color: var(--large-text-color);
+    margin: 0;
 }
 
 .bio, .portfolio {
