@@ -44,19 +44,19 @@ header {
 
 #greeting span {
     color: var(--large-text-color);
-    font-size: 4vh;
+    font-size: 7vw;
 }
 
 /* 'hi,' */
 #greeting span:nth-of-type(1) {
     align-self: flex-start;
-    font-size: 12vh;
+    font-size: 22vw;
     padding-top: 1vh;
 }
 
 /* 'my name is' */
 #greeting span:nth-of-type(2) {
-    font-size: 5vh;
+    font-size: 9vw;
     padding: 80px 0 0 80px;
 }
 
@@ -83,7 +83,7 @@ header {
 }
 
 .profileImg {
-    height: 20vh;
+    height: 35vw;
     border-radius: 50%;
     border: 1px solid var(--light-bg-color);
     align-self: flex-start;
@@ -91,7 +91,7 @@ header {
 }
 
 .fa-chevron-down {
-    font-size: 6vh;
+    font-size: 11vw;
     color: var(--large-text-color);
     opacity: .7;
 }
@@ -199,13 +199,18 @@ nav ul li > *:focus {
 I think it makes more sense to do media queries on portrait or landscape
 instead of specific resolutions */
 @media (orientation: landscape) {
+    #greeting span {
+        font-size: 4vh;
+    }
     /* 'hi,' */
     #greeting span:nth-of-type(1) {
+        font-size: 12vh;
         padding-left: 5vw;
     }
 
     /* 'my name is' */
     #greeting span:nth-of-type(2) {
+        font-size: 5vh;
         padding: 10vh 0 0 30vw;
     }
 
