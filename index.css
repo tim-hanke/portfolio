@@ -191,26 +191,20 @@ nav ul li > *:focus {
 
 .projectImg {
     width: 90vmin;
-    /* height: 30vmax; */
     max-width: 450px;
 }
 
-/* because I've tried to size the hero/header relative to the viewport size
-I think it makes more sense to do media queries on portrait or landscape
-instead of specific resolutions */
+/* if we're in landscape mode, either on phone/tablet or
+desktop, adjust the spacing on the hero to spread it out
+a little bit */
 @media (orientation: landscape) {
-    #greeting span {
-        font-size: 4vh;
-    }
     /* 'hi,' */
     #greeting span:nth-of-type(1) {
-        font-size: 12vh;
         padding-left: 5vw;
     }
 
     /* 'my name is' */
     #greeting span:nth-of-type(2) {
-        font-size: 5vh;
         padding: 10vh 0 0 30vw;
     }
 
@@ -239,6 +233,23 @@ instead of specific resolutions */
         position: absolute;
         bottom: 10vh;
     }
+}
+
+/* once we get to tablet size, adjust some font sizes */
+@media (min-width: 550px) {
+    #greeting span {
+        font-size: 4vh;
+    }
+
+    /* 'hi,' */
+    #greeting span:nth-of-type(1) {
+        font-size: 12vh;
+    }
+
+    /* 'my name is' */
+    #greeting span:nth-of-type(2) {
+        font-size: 5vh;
+    }
 
     .fa-chevron-down {
         font-size: 6vh;
@@ -257,7 +268,6 @@ and grow the hero/header section */
         position: fixed;
         top: 0;
         width: 100%;
-        /* background-color: transparent; */
     }
 
     .transparent {
