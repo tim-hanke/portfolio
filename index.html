@@ -1,64 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Portfolio for Tim Hanke showcasing a Bio and Portfolio of recent projects.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Portfolio for Tim Hanke showcasing a Bio and Portfolio of recent projects."
+    />
     <title>Tim Hanke Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/e49e01fcdf.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/e49e01fcdf.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- favicon from favicon.io -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/portfolio/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/portfolio/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/portfolio/favicon-16x16.png">
-    <link rel="manifest" href="/portfolio/site.webmanifest">
-</head>
-<body>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/portfolio/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/portfolio/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/portfolio/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/portfolio/site.webmanifest" />
+  </head>
+  <body>
     <main>
-        <header>
-            <h1 id="greeting"><span>hi, </span><span>my name is </span><span>Tim Hanke </span><span>and I'm a </span><span>full stack </span><span>developer</span></h1>
-            <img class="profileImg" src="images/p3wu3kcr7zgsgos8_400x.jpg" alt="Tim Hanke smiling in a grey suit jacket and blue shirt">
-            <span class="fas fa-chevron-down"></span>
-        </header>
-        <nav id="navbar" class="navbar transparent">
-            <ul>
-                <li class="navlinks hidden"><a href="#bio">Bio</a></li>
-                <li class="navlinks hidden"><a href="#portfolio">Portfolio</a></li>
-                <li class="navlinks hidden"><a href="mailto:tim@timhanke.dev" aria-label="Email me" title="Email me"><span class="fas fa-envelope"></span></a></li>
-                <li class="navlinks hidden"><a href="https://github.com/tim-hanke" aria-label="My GitHub" title="My GitHub" target="_blank" rel="noopener"><span class="fab fa-github"></span></a></li>
-                <li class="navlinks hidden"><a href="https://www.linkedin.com/in/timothy-hanke/" aria-label="My LinkedIn" title="My LinkedIn" target="_blank" rel="noopener"><span class="fab fa-linkedin"></span></a></li>
-                <li class="hamburger"><button aria-label="Menu" title="Menu" onclick="navToggler()"><span class="fas fa-bars"></span></button></li>
-            </ul>
-        </nav>
-        <section id="bio" class="bio">
-            <h2>About Me</h2>
-            <p>I'm looking to join a team of great programmers who are as passionate about making an impact as I am. Let's get going and create the future!</p>
-            <p>I'm a graduate of Thinkful's Engineering Flex program and have experience with HTML, CSS, JavaScript, jQuery, React, Node.js, and PostgreSQL.</p>
-            <!-- <p>I make interfaces that <em>just work</em>, back ends that <em>never quit</em>, apps that become <em>indispensable</em>, and space for <em>moments of delight</em> in everything I do.</p> -->
-            <p>Apart from code, I like to travel off the beaten path, write, create inside jokes with friends, and play games (some with rules only I know).</p>
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolioFlexContainer">
-                <section class="portfolio">
-                    <h3>Quotazo</h3>
-                    <img src="images/quotazo-square-tiny.jpg" alt="screenshot of Quotazo" class="projectImg">
-                    <p>Quotazo generates high-quality, meme-like "quotazos" by pairing a famous, inspirational and/or amusing quote with a related image. The user can then download the image, share a link via email, Facebook or LinkedIn, or get a pre-made Instagram style caption.</p>
-                    <p>HTML, CSS, JavaScript, jQuery</p>
-                    <p><a href="http://tim-hanke.github.io/quotazo/" target="_blank" rel="noopener">Live app</a> | <a href="http://github.com/tim-hanke/quotazo" target="_blank" rel="noopener">Repo</a></p>
-                </section>
-                <section class="portfolio">
-                    <h3>Movie Quote Quiz</h3>
-                    <img src="images/quizapp_750x.jpg" alt="screenshot of Movie Quote Quiz app" class="projectImg">
-                    <p>This is a quiz architecture used to see if you can remember, or misremember, some of the silver screen’s most famous lines. It’s easily extensible for various amounts of questions or answer options.</p>
-                    <p>HTML, CSS, JavaScript, jQuery</p>
-                    <p><a href="http://tim-hanke.github.io/quiz-app/" target="_blank" rel="noopener">Live app</a> | <a href="http://github.com/tim-hanke/quiz-app" target="_blank" rel="noopener">Repo</a></p>
-                </section>
-            </div>
-        </section>
+      <header>
+        <h1 id="greeting">
+          <span>hi, </span><span>my name is </span><span>Tim Hanke </span
+          ><span>and I'm a </span><span>full stack </span><span>developer</span>
+        </h1>
+        <img
+          class="profileImg"
+          src="images/p3wu3kcr7zgsgos8_400x.jpg"
+          alt="Tim Hanke smiling in a grey suit jacket and blue shirt"
+        />
+        <span class="fas fa-chevron-down"></span>
+      </header>
+      <nav id="navbar" class="navbar transparent">
+        <ul>
+          <li class="navlinks hidden"><a href="#bio">Bio</a></li>
+          <li class="navlinks hidden"><a href="#portfolio">Portfolio</a></li>
+          <li class="navlinks hidden">
+            <a
+              href="mailto:tim@timhanke.dev"
+              aria-label="Email me"
+              title="Email me"
+              ><span class="fas fa-envelope"></span
+            ></a>
+          </li>
+          <li class="navlinks hidden">
+            <a
+              href="https://github.com/tim-hanke"
+              aria-label="My GitHub"
+              title="My GitHub"
+              target="_blank"
+              rel="noopener"
+              ><span class="fab fa-github"></span
+            ></a>
+          </li>
+          <li class="navlinks hidden">
+            <a
+              href="https://www.linkedin.com/in/timothy-hanke/"
+              aria-label="My LinkedIn"
+              title="My LinkedIn"
+              target="_blank"
+              rel="noopener"
+              ><span class="fab fa-linkedin"></span
+            ></a>
+          </li>
+          <li class="hamburger">
+            <button aria-label="Menu" title="Menu" onclick="navToggler()">
+              <span class="fas fa-bars"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <section id="bio" class="bio">
+        <h2>About Me</h2>
+        <p>
+          I'm looking to join a team of great programmers who are as passionate
+          about making an impact as I am. Let's get going and create the future!
+        </p>
+        <p>
+          I'm a graduate of Thinkful's Engineering Flex program and have
+          experience with HTML, CSS, JavaScript, jQuery, React, Node.js, and
+          PostgreSQL.
+        </p>
+        <!-- <p>I make interfaces that <em>just work</em>, back ends that <em>never quit</em>, apps that become <em>indispensable</em>, and space for <em>moments of delight</em> in everything I do.</p> -->
+        <p>
+          Apart from code, I like to travel off the beaten path, write, create
+          inside jokes with friends, and play games (some with rules only I
+          know).
+        </p>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolioFlexContainer">
+          <section class="portfolio">
+            <h3>Marker Monkey</h3>
+            <img
+              src="images/mockup-greybackground-small.png"
+              alt="screenshot of Marker Monkey"
+              class="projectImg"
+            />
+            <p>Let the Monkey remember it for you!</p>
+            <p>
+              A place to store all the things you just don't have time to read
+              now.
+            </p>
+            <p>
+              Users bookmark articles and websites which are stored with rich
+              metadata and presented in a clean, visually appealing interface.
+            </p>
+            <p>React, Node.js, Express, PostgreSQL</p>
+            <p>
+              <a
+                href="http://tim-hanke.github.io/quotazo/"
+                target="_blank"
+                rel="noopener"
+                >Live app</a
+              >
+              |
+              <a
+                href="https://github.com/tim-hanke/marker-monkey-client"
+                target="_blank"
+                rel="noopener"
+                >Client Repo</a
+              >
+              |
+              <a
+                href="https://github.com/tim-hanke/marker-monkey-server"
+                target="_blank"
+                rel="noopener"
+                >Server Repo</a
+              >
+            </p>
+          </section>
+          <section class="portfolio">
+            <h3>Quotazo</h3>
+            <img
+              src="images/quotazo-square-tiny.jpg"
+              alt="screenshot of Quotazo"
+              class="projectImg"
+            />
+            <p>
+              Quotazo generates high-quality, meme-like "quotazos" by pairing a
+              famous, inspirational and/or amusing quote with a related image.
+            </p>
+            <p>
+              The user can then download the image, share a link via email,
+              Facebook or LinkedIn, or get a pre-made Instagram style caption.
+            </p>
+            <p>HTML, CSS, JavaScript, jQuery</p>
+            <p>
+              <a
+                href="http://tim-hanke.github.io/quotazo/"
+                target="_blank"
+                rel="noopener"
+                >Live app</a
+              >
+              |
+              <a
+                href="http://github.com/tim-hanke/quotazo"
+                target="_blank"
+                rel="noopener"
+                >Repo</a
+              >
+            </p>
+          </section>
+          <section class="portfolio">
+            <h3>Movie Quote Quiz</h3>
+            <img
+              src="images/quizapp.png"
+              alt="screenshot of Movie Quote Quiz app"
+              class="projectImg"
+            />
+            <p>
+              This is a quiz architecture used to see if you can remember, or
+              misremember, some of the silver screen’s most famous lines. It’s
+              easily extensible for various amounts of questions or answer
+              options.
+            </p>
+            <p>HTML, CSS, JavaScript, jQuery</p>
+            <p>
+              <a
+                href="http://tim-hanke.github.io/quiz-app/"
+                target="_blank"
+                rel="noopener"
+                >Live app</a
+              >
+              |
+              <a
+                href="http://github.com/tim-hanke/quiz-app"
+                target="_blank"
+                rel="noopener"
+                >Repo</a
+              >
+            </p>
+          </section>
+        </div>
+      </section>
     </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
