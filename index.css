@@ -179,7 +179,7 @@ nav ul li > *:focus {
 
 .portfolio {
     max-width: 500px;
-    height: 75vmax;
+    height: auto;
     max-height: 700px;
 }
 
