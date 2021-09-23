@@ -267,7 +267,7 @@ show our hamburger menu icon,
 and grow the hero/header section */
 @media (max-width: 600px) {
     header {
-        height: 100vh;
+        height: auto;
     }
 
     nav {
