@@ -174,7 +174,7 @@ nav ul li > *:focus {
 }
 
 .bio {
-    height: 50vmax;
+    height: auto;
 }
 
 .portfolio {
