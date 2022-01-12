@@ -182,12 +182,12 @@ nav ul li > *:focus {
 }
 
 .bio {
-  height: 50vmax;
+  height: auto;
 }
 
 .portfolio {
   max-width: 500px;
-  height: 75vmax;
+  height: auto;
   max-height: 700px;
 }
 
@@ -275,13 +275,15 @@ show our hamburger menu icon,
 and grow the hero/header section */
 @media (max-width: 600px) {
   header {
-    height: 100vh;
+    height: auto;
   }
 
   nav {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 6.5vh;
+    font-size: 5vh;
   }
 
   .transparent {
