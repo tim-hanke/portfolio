@@ -179,6 +179,7 @@ nav ul li > *:focus {
 .bio p,
 .portfolio p {
   max-width: 55ch;
+  margin: 1ch;
 }
 
 .bio {
