@@ -199,6 +199,8 @@ nav ul li > *:focus {
 .projectImg {
   width: 90vmin;
   max-width: 450px;
+  margin-bottom: 1ch;
+  margin-top: 2ch;
 }
 
 /* if we're in landscape mode, either on phone/tablet or
