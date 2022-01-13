@@ -126,7 +126,7 @@ nav ul li {
 }
 
 nav ul li > *,
-.fa-chevron-down {
+.hover-fade {
   text-decoration: none;
   color: var(--large-text-color);
   -webkit-transition: color 0.3s;
@@ -137,8 +137,8 @@ nav ul li > *,
 
 nav ul li > *:hover,
 nav ul li > *:focus,
-.fa-chevron-down:hover,
-.fa-chevron-down:focus {
+.hover-fade:hover,
+.hover-fade:focus {
   color: var(--highlight-text-color);
 }
 
